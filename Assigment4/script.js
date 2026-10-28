@@ -20,6 +20,7 @@ for (const book of borrower.borrowedBooks) {
 }
 console.log(`Total number of books: ${borrower.borrowedBooks.length}`);
 
+console.log("-------------------------------");
 // PART B
 class Book {
     constructor(title, author, year) {
@@ -39,6 +40,7 @@ const book2 = new Book("The Hobbit", "J. R. R. Tolkien", 1937);
 const book3 = new Book("The Left Hand of Darkness", "Ursula K. Le Guin", 1969);
 const books = [book1, book2, book3];
 
+
 book2.isAvailable = false;
 
 console.log("Book availability");
@@ -47,6 +49,7 @@ for (const book of books) {
     console.log(`Age: ${book.getAge()} years`);
 }
 
+console.log("-------------------------------");
 // PART C
 const jsonText = `[
 { "name": "Anna", "loans": 5 },
@@ -66,6 +69,7 @@ const averageLoans = totalLoans / loanData.length;
 console.log("Average loans:", averageLoans);
 console.log("Data converted back to JSON:", JSON.stringify(loanData));
 
+console.log("-------------------------------");
 // PART D
 function printReceipt() {
     console.log("Receipt printed");
@@ -81,6 +85,7 @@ function startLoan() {
 
 startLoan();
 
+console.log("-------------------------------");
 // PART E
 function validateLoanDays(days) {
     if (typeof days !== "number") {
